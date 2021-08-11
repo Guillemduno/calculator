@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #0f73de;
+    --white: #FFFFFF;
+    --light-grey: #f2f2f2;
+    --grey: #a1a1a1;
+    --black: #464646;
+}
+
+body{
+    color: var(--blue);
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+h1{
+    color:var(--blue);
+}
+
+.container{
+    margin: 1rem 1rem;
+    
+}
+
+.btns_container{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "total total total total"
+        "result result result result"
+        "c divided multiplication back"
+        "btn7 btn8 btn9 resta"
+        "btn4 btn5 btn6 suma"
+        "btn1 btn2 btn3 equal"
+        "btn0 btn0 btn0 equal";
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    border: 1px solid var(--light-grey);
+    font-size: 1.6em;
+}
+
+.btn_number{
+    background: var(--white);
+    color: var(--black);
+}
+
+.btn1{
+    grid-area: btn1;
+}
+.btn2{
+    grid-area: btn2;
+}
+.btn3{
+    grid-area: btn3;
+}
+.btn4{
+    grid-area: btn4;
+}
+.btn5{
+    grid-area: btn5;
+}
+.btn6{
+    grid-area: btn6;
+}
+.btn7{
+    grid-area: btn7;
+}
+.btn8{
+    grid-area: btn8;
+}
+.btn9{
+    grid-area: btn9;
+}
+.btn0{
+    grid-area: btn0;
+}
+
+.c{
+    grid-area: c;
+}
+
+.back{
+    grid-area: back;
+}
+
+.suma{
+    grid-area: suma;
+}
+
+.resta{
+    grid-area: resta;
+}
+
+.multiplication{
+    grid-area: multiplication;
+}
+
+.divided{
+    grid-area: divided;
+}
+
+.equal{
+    grid-area: equal;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.total, .result{
+    width: auto;
+    height: 1.5rem;
+    text-align: right;
+    font-size: 2.4rem;
+    margin: .5rem 0;
+    color:var(--black);
+}
+
+.total{
+    grid-area:total;
+}
+
+.result{
+    grid-area:result;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color:var(--grey);
+}
+
+.c, .divided, .multiplication, .back, .resta, .suma{
+    color:var(--blue);
+
+}
