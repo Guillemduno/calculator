@@ -10,91 +10,29 @@
 
 <body>
     <div class="container">
+        <div class="display">0</div>
         <div class="btns_container">    
-          <div class="total" id="total"></div>
-          <div class="result" id="result"></div>
-          <button type="button" id="btn1" class="btn_number btn1" value="1" onclick="afegeix_nombre(this.value)">1</button>
-          <button type="button" id="btn2" class="btn_number btn2" value="2" onclick="afegeix_nombre(this.value)">2</button>
-          <button type="button" id="btn3" class="btn_number btn3" value="3" onclick="afegeix_nombre(this.value)">3</button>
-          <button type="button" id="btn4" class="btn_number btn4" value="4" onclick="afegeix_nombre(this.value)">4</button>
-          <button type="button" id="btn5" class="btn_number btn5" value="5" onclick="afegeix_nombre(this.value)">5</button>
-          <button type="button" id="btn6" class="btn_number btn6" value="6" onclick="afegeix_nombre(this.value)">6</button>
-          <button type="button" id="btn7" class="btn_number btn7" value="7" onclick="afegeix_nombre(this.value)">7</button>
-          <button type="button" id="btn8" class="btn_number btn8" value="8" onclick="afegeix_nombre(this.value)">8</button>
-          <button type="button" id="btn9" class="btn_number btn9" value="9" onclick="afegeix_nombre(this.value)">9</button>
-          <button type="button" id="btn0" class="btn_number btn0" value="0" onclick="afegeix_nombre(this.value)">0</button>
-          <button type="button" class="c" value="C" onclick="reset_nombre()">C</button>
-          <button type="button" class="back" value="back" onclick="back_nombre()">back</button>
-          <button type="button" class="suma" value="suma" onclick="add_operation(this.value)">+</button>
-          <!-- <button type="button" class="suma" value="suma" onclick="afegeix_nombre(this.value)">+</button> -->
-          <button type="button" class="resta" value="resta" onclick="add_operation(this.value)">-</button>
-          <button type="button" class="multiplication" value="multiplication" onclick="add_operation(this.value)">x</button>
-          <button type="button" class="divided" value="divided" onclick="add_operation(this.value)">/</button>
-          <button type="button" class="equal" value="equal" onclick="add_operation(this.value)">=</button>
-        </div>
+          <button type="button" id="btn1" class="btn_number btn1">1</button>
+          <button type="button" id="btn2" class="btn_number btn2">2</button>
+          <button type="button" id="btn3" class="btn_number btn3">3</button>
+          <button type="button" id="btn4" class="btn_number btn4">4</button>
+          <button type="button" id="btn5" class="btn_number btn5">5</button>
+          <button type="button" id="btn6" class="btn_number btn6">6</button>
+          <button type="button" id="btn7" class="btn_number btn7">7</button>
+          <button type="button" id="btn8" class="btn_number btn8">8</button>
+          <button type="button" id="btn9" class="btn_number btn9">9</button>
+          <button type="button" id="btn0" class="btn_number btn0">0</button>
+          <button type="button" class="c">C</button>
+          <button type="button" class="back" >back</button>
+          <button type="button" class="suma">+</button>
+          <button type="button" class="resta">-</button>
+          <button type="button" class="multiplication">&times;</button>
+          <button type="button" class="divided">/</button>
+          <button type="button" class="equal">=</button>
         </div>
     </div>
 </body>
 </html>
 
-
-<script>
-
-    let item = new Array();
-
-    function add_item_to_array_item(item){
-        item.push(item);
-        console.log(item);
-    }
-
-
-// old code
-    // var number = new Array();
-    // var array_of_numbers = new Array();
-
-    // console.log(number);
-
-    // function afegeix_nombre(num){
-    //     number.push(num);
-    //     showNumber(number);
-    // }
-
-
-    // function back_nombre(){
-    //     number.pop();
-    //     showNumber(number);
-    // }
-   
-    // function reset_nombre(){
-    //     number = [];
-    //     array_of_numbers = [];
-    //     document.getElementById('result').innerHTML= 0;
-    //     showNumber(number);
-    // }
-
-    // function add_operation(operator){
-    //     array_of_numbers.push(showNumber(number));
-    //     let result = 0;
-        
-    //     for (let index = 0; index < array_of_numbers.length; index++) {
-    //         if (operator == 'suma') {
-    //             result = result + array_of_numbers[index]; 
-    //         }
-    //         if (operator == 'resta') {
-    //             result = array_of_numbers[index] - result; 
-    //         } 
-    //     }
-
-    //     console.log(array_of_numbers);
-    //     console.log(result);
-    //     document.getElementById('result').innerHTML= result;
-    //     number = [];
-    // }
-
-    // function showNumber(number){
-    //     let singleNumber = Number(number.join(''));
-    //     singleNumbe = new Intl.NumberFormat('de-DE').format(singleNumber);
-    //     document.getElementById('total').innerHTML = singleNumbe;
-    //     return singleNumber;
-    // }
-</script>
+<!-- <script src="test.js"></script> -->
+<script src="calculator.js"></script>
